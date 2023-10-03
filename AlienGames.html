@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AlienGames</title>	
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<link rel="icon" type="image/x-icon" href="imagen/BRANDO/ALIENGames.png"/>
+<style>
+	body {
+		background-color: #000000;
+		background-repeat: repeat;
+		color: #ffffff;
+		font-family: "Press Start 2P", cursive;
+		font-size: 16px;
+		line-height: 1.5;
+		padding: 3%;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 40px; /* Aumentar el tamaño del nombre */
+		padding-top: 10px; /* Reducir el espacio superior */
+		margin-top: 0; /* Eliminar completamente el espacio superior */
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center; /* Alinear los iframe al centro horizontalmente */
+		align-items: center;
+		height: 90vh;
+	}
+
+	.container iframe {
+		width: 95%;
+		height: 100%; /* Aumentar el alto de los iframe al 80% del contenedor */
+		border: none;
+		margin-bottom: 5%;
+
+	}
+
+	iframe{
+		margin-bottom: 5%;
+	}
+
+	.container iframe:hover {
+		box-shadow: 0 0 10px 2px #1fe1b1;
+		transition: 0.3s;
+	}
+
+	/* Estilos para el body cuando el mouse está sobre el iframe */
+	.hover-disabled {
+		background-color: #000000;
+		color: #1fe1b1;
+		font-family: "Press Start 2P", cursive;
+		transition: background-color 1s; /* Agregar una transición de 1 segundo para cambiar el color */
+		transition: color 1s; /* Agregar una transición de 1 segundo para cambiar el color */
+	}
+
+	img#IMG {
+		display: block; /* Remove inline image styling */
+		margin: 0 auto; /* Center the image */
+		max-width: 20%; /* Set a maximum width for the image */
+	}
+
+	.FOOT {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #000000da;
+		color: #ffffff;
+		width: 100%;
+		height: 100px;
+		font-family: "Press Start 2P", cursive;
+		font-size: 100%;
+		text-align: center;
+		margin-top: auto; /* Push the footer to the bottom */
+	}
+
+#none{
+	margin-bottom: 5%;
+}
+
+</style>
+
+<body>
+	<img id="IMG" src="imagen/BRANDO/ALIENGames.png" alt="">
+	<h1>AlienGames</h1>
+	<div class="container">
+		<!-- Juego 1 -->
+		<iframe src="https://www.1001juegos.com/embed/bloxdhop-io" onmouseover="disableHover()" onmouseout="enableHover()"></iframe>
+
+		<!-- Juego 2 -->
+		<iframe src="https://www.1001juegos.com/embed/chess-online-multiplayer-game" onmouseover="disableHover()" onmouseout="enableHover()"></iframe>
+
+		<!-- Juego 3 -->
+		<iframe src="https://www.1001juegos.com/embed/ultimate-tic-tac-toe" onmouseover="disableHover()" onmouseout="enableHover()"></iframe>
+
+		<!-- Juego 4 -->
+		<iframe src="https://www.1001juegos.com/embed/billiards" onmouseover="disableHover()" onmouseout="enableHover()"></iframe>
+
+		<!-- Juego 5 -->
+		<iframe src="https://narrow.one" onmouseover="disableHover()" onmouseout="enableHover()"></iframe>
+
+				<div class="FOOT">
+				  <p>&nbsp;&lt;/BrandoJulca&gt;&nbsp; © 2023 <br>Todos los derechos reservados.</p>
+	</div>
+	
+<script>
+	function disableHover() {
+		document.body.classList.add('hover-disabled');
+	}
+
+	function enableHover() {
+		document.body.classList.remove('hover-disabled');
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,848 @@
+/* ESTILOS GENERALES */
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.content {
+  /* Estilos para el contenido principal de la página */
+  /* Asegura que el contenido no se superponga al video */
+  position: relative;
+  z-index: 1; /* Coloca el contenido encima del video */
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  left: 0px; /* Ajusta la posición a la izquierda */
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+h3{
+  font-family: 'Jura', sans-serif;
+  color: #37c4ff;
+  font-size: 300%;
+  text-align: center;
+}
+
+p{
+  font-family: 'Jura', sans-serif;
+  color: #ffffff;
+  font-size: 100%;
+  text-align: center;
+}
+
+#YO{
+  font-family: 'Ysabeau SC', sans-serif;
+  color: #37c4ff;
+  font-size: 300%;
+  text-align: center;
+  padding-top: 0%;
+  margin-top: 0%;
+}
+
+#IMG_COLUMNA{
+  font-family: 'Ysabeau SC', sans-serif;
+  color: #ffffff;
+  font-size: 300%;
+  text-align: center;
+}
+
+h2{
+  margin-bottom: 0%;
+  font-family: 'Ysabeau SC', sans-serif;
+  color: #ffffff;
+}
+
+h2 a {
+  margin-bottom: 0%;
+  font-family: 'Ysabeau SC', sans-serif;
+  color: #12FFFF;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  margin-bottom: 0%;
+  font-family: 'Ysabeau SC', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.TITTLE{
+text-align: center;
+margin: 0px;
+padding: 0px;
+background: transparent;
+}
+
+header .logo-text {
+  display: inline-block;
+  font-family: 'Tangerine', cursive;
+  line-height: 100%;
+  font-weight: 100;
+  font-size: 400%;
+}
+
+/* ESTILOS DEL MENU */
+
+nav {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  background-color: #000000ea;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 5%;
+  padding-bottom: 3.3%;
+}
+
+.FOOT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000da;
+  color: #ffffff;
+  width: 100%;
+  height: 100px; /* Puedes ajustar la altura aquí como desees */
+  font-family: 'Ysabeau SC', sans-serif;
+  font-size: 100%;
+  text-align: center;
+}
+
+/* Ajustar el alto del footer a más de 100px si es necesario */
+
+#menu-btn {
+  position: fixed;
+  z-index: 999;
+  width: 5%;
+  height: 8%;
+  margin-right: 10%;
+  margin-left: -18%;
+  background-image: url("imagen/BRANDO/LOGO_B_Neon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; /* Ajusta la imagen dentro del contenedor */
+  transition: transform 0.5s ease;
+  background-color: transparent;
+  border: none;
+  margin-top: -0.1%;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#menu-btn:hover {
+  transition: transform 0.8s ease-out;
+  animation: breathe 1s infinite;
+}
+
+/* ESTILO DE PIE DE PAGINA */
+footer {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0% 0%;
+}
+
+/* ESTILOS DEL MAIN */
+.container_MENU {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+  margin: auto;
+  padding: 2%;
+  border-radius: 2%; /* ajusta el valor según la cantidad de curvatura que desees */
+  width: 90%; /* ajusta el valor según la cantidad de reducción que desees */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item_MENU {
+    margin: 2%;
+    padding: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    max-width: 100%;
+    font-family: 'Caveat Brush', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 180%;
+    background-color: #00000077;
+    padding-top: 1%;
+    border-radius: 5%;
+    font-weight: lighter;
+}
+
+.container {
+  background-image: url("imagen/BRANDO/MADERA.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+  margin: auto;
+  padding: 2%;
+  border-radius: 1%;
+}
+
+.item_PRODUCTO {
+  margin: 2%;
+  padding: 2%;
+  position: relative;
+  max-width: 100%;
+  border-radius: 10%;
+  font-family: 'Caveat Brush', cursive;
+  text-align: center;
+  color: #ffffff;
+  background-color: #1816168c;
+  padding-bottom: 1%;
+  margin-bottom: 0%;
+  padding-top: 1%;
+  margin-top: 3%;
+}
+
+.item_PRODUCTO h2 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/*BOTONES*/
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  border: none;
+  background: transparent;
+  color:#fffb00;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+/* ESTILOS DEL MAIN - ESTILOS DEL BOTONES FLOTANTES  */
+.BOT_IMG_MENU {
+  position: relative;
+  flex-wrap: nowrap;
+  width: 350px;
+  max-width: 100%;
+  height: 350px;
+  max-height: 100%;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  transition: transform 0.5s ease-out;
+}
+
+.BOT_IMG_MENU:hover {
+  transition: transform 0.8s ease-out;
+  transform: scale(1.05);
+}
+
+.BOT_IMG_MENU:hover::after {
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  transform-origin: center center;
+  content: attr(data-content);
+  width: 91%;
+  height: 91%;
+  background: rgba(70, 70, 70, 0.4);
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tangerine', cursive;
+  font-size: 400%;
+}
+
+/* //PRODUCTOS// */
+
+.BOT_IMG {
+  position: relative;
+  flex-wrap: nowrap;
+  width: 350px;
+  max-width: 100%;
+  height: 350px;
+  max-height: 100%;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 101%;
+  border: none;
+  overflow: hidden; /* Añade un overflow:hidden para evitar que el contenido se desborde en hover */
+}
+
+.BOT_IMG::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transform-origin: center center;
+  content: attr(data-content);
+  width: 100%;
+  height: 100%;
+  background: rgba(70, 70, 70, 0.4);
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tangerine', cursive;
+  font-size: 400%;
+  opacity: 0; /* Inicialmente, oculta el contenido */
+  transition: opacity 0.3s ease-out;
+}
+
+.BOT_IMG:hover::after {
+  opacity: 1; /* Muestra el contenido en hover */
+}
+
+
+.NAME{
+  text-align: center;
+  font-size: 500%;
+  font-weight: 550;
+}
+
+
+/* ESTILOS DE LI */
+nav ul {
+  padding-top: -0.1%;
+  display: inline-block;
+  text-align: center; /* Alinea los elementos li a la derecha */
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 60px; /* Añade un margen izquierdo para separar los elementos */
+  padding-right: 15px;
+  
+}
+
+nav ul li a {
+  color: #12ffff;
+  text-decoration: none;
+  font-size: 120%;
+  font-weight:bolder;
+  transition: color 0.3s ease;
+  display: inline-block;
+  transform: scale(1.3); /* Aumenta el tamaño en un 10% */
+  font-family: 'Ysabeau SC', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  font-weight:bolder;
+  font-family: 'Ysabeau SC', sans-serif;
+}
+
+/* NO NAV CV */
+
+#CV ul {
+  display: inline-block;
+  text-align: center; /* Alinea los elementos li a la derecha */
+}
+
+#CV ul li {
+  display: inline-block;
+}
+
+#CV ul li a {
+  color: #12ffff;
+  text-decoration: none;
+  font-size: 200%;
+  font-weight:bolder;
+  transition: color 0.3s ease;
+  display: inline-block;
+  transform: scale(1.3); /* Aumenta el tamaño en un 10% */
+  font-family: 'Ysabeau SC', sans-serif;
+}
+
+#CV ul li a:hover {
+  color: #ffffff;
+  font-weight:bolder;
+  font-family: 'Ysabeau SC', sans-serif;
+}
+
+/* BrandoTexto */
+/* === removing default button style ===*/
+.buttonBrando {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin-top: 3.5%;
+  margin-left: 10%;
+}
+
+/* button styling */
+.buttonBrando {
+  --border-right: 6px;
+  --text-stroke-color:#ffffff;
+  --animation-color: #ffffff;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: 'Ysabeau SC', sans-serif;
+  position: relative;
+  color: #47bd23b9;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-textBrando {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 1.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.buttonBrando:hover .hover-textBrando {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+/* COLUMNA 5 PROYECTOS */
+.COLUMN {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en una nueva línea */
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  align-items: flex-start;
+  padding: 0 auto;
+}
+
+
+/*/autoscroll de imagenes /*/
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.containerSCROLL {
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  width: 100vw;
+  overflow: hidden;
+  max-width: 100%; /* Establecer un ancho máximo para mantener el control */
+  margin: 0%;
+  padding: 0%;
+}
+
+.scroll-parent {
+  position: relative;
+  width: 100vw;
+  height: 20rem;
+  padding: 2rem 0;
+  overflow-x: hidden;
+}
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.scroll-element img {
+  width: 15%;
+}
+
+.primary {
+  animation: primary 10s linear infinite;
+}
+
+.secondary {
+  animation: secondary 10s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+
+/*/ CONTACTO /*/
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.izq {
+  flex: 1;
+  text-align: right; /* Alinear contenido a la derecha */
+  padding: 2%;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+
+.der {
+  flex: 1;
+  padding: 2%;
+  padding-left: 2%;
+  text-align: justify;
+}
+
+.image {
+  max-width: 70%;
+}
+
+.icons {
+  margin-top: 10px;
+  text-align: right;
+  padding-right: 25%;
+}
+
+.icon-link {
+  display: inline-block;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px; /* Alinear verticalmente el ícono dentro del botón */
+  border-radius: 50%; /* Para hacer que el botón sea redondeado */
+  background-color: #000000; /* Color de fondo del botón */
+  color: #ffffff; /* Color del ícono */
+  text-align: center;
+  align-items: center;
+}
+
+/* Estilos adicionales para los botones de los íconos */
+.icon-link:hover {
+  background-color: #ffffff; /* Cambiar color de fondo al pasar el mouse */
+  color: #000000; /* Color del ícono */
+}
+
+.iframe-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 70%;
+  height: 70%;
+}
+
+/* BOTÓN DESCARGAR PREMIUM */
+.MenuPremium {
+  background: #00000000;
+  background-position: left;
+  transition-duration: 1s;
+  padding: 11px 50px; /* Tamaño fijo del botón (ajusta según sea necesario) */
+  border: none;
+  font-weight: 800;
+  border-radius: 20px;
+}
+
+.Btn::before {
+  transition-duration: 1s;
+}
+
+.MenuPremium:hover {
+  background: linear-gradient(to right,#01265a,#12ffff,#01001d,#021f4b,#12ffff,#01001d);
+  background-size: 250%;
+  color: #000000;
+  transform: scale(1.1); /* Aplica un efecto de escala al botón en hover */
+  border: none;
+  background-position: right;
+  transition-duration: 1s;
+}
+
+
+/* BOTÓN DESCARGAR PREMIUM 2 */
+.MenuPremium2 {
+  color: #12ffff;
+  background: #0000007c;
+  background-position: left;
+  transition-duration: 1s;
+  padding: 11px 50px; /* Tamaño fijo del botón (ajusta según sea necesario) */
+  border: none;
+  font-weight: 800;
+  border-radius: 20px;
+}
+
+.Btn::before {
+  transition-duration: 1s;
+}
+
+.MenuPremium2:hover {
+  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+  background-size: 250%;
+  color: #ffffff;
+  transform: scale(1.1); /* Aplica un efecto de escala al botón en hover */
+  border: none;
+  background-position: right;
+  transition-duration: 1s;
+}
+
+/* TEXT_LOGO_BRANDEV */
+
+.button {
+  height: 50px;
+  width: 250px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  background-color: #00000000;
+}
+
+.type1::after {
+  content: "BranDev";
+  height: 50px;
+  width: 250px;
+  background: linear-gradient(to left, #12ffff,#01001d,#021f4b,#12ffff,#01001d);
+  background-size: 250%;
+  background-position: left;
+  color: #ffffff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1::before {
+  content: "Brando Julca";
+  height: 50px;
+  width: 250px;
+  background-color: #00000000;
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.type1:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
+
+/* MI DIV INICIO */
+.miDiv {
+  height: 605px; /* Tamaño de altura deseado */
+  padding-top: 15%; /* Puedes ajustar este valor según tu preferencia */
+  text-align: center; /* Centra el contenido verticalmente */
+  background-color: #f0f0f000; /* Color de fondo opcional */
+}
+
+.SoftwareDiv {
+  height: 605px; /* Tamaño de altura deseado */
+  padding-top: 3%; /* Puedes ajustar este valor según tu preferencia */
+  text-align: center; /* Centra el contenido verticalmente */
+  background-color: #f0f0f000; /* Color de fondo opcional */
+  
+}
+
+#nombre {
+  font-size: 800%; /* Tamaño de fuente más grande */
+  margin-bottom: 0%;
+  position: relative; /* Establece una posición relativa para el elemento */
+  color: #ffffff;
+  font-family: 'Oxanium', cursive;
+}
+
+#nombre::after {
+  content: "|"; /* Agrega el cursor al final del texto */
+  display: inline-block;
+  opacity: 0; /* Inicialmente, el cursor está oculto */
+  animation: cursorBlink 0.5s infinite alternate; /* Animación del cursor que parpadea */
+}
+
+@keyframes escribir {
+  to {
+    width: 100%; /* Anima la propiedad width para simular el texto que se escribe */
+  }
+}
+
+@keyframes cursorBlink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+#profesion {
+  font-size: 200%; /* Tamaño de fuente más pequeño que nombre */
+  padding-bottom: 2%;
+}
+
+
+
+#enlace {
+  display: block;
+  margin: 0 1%; /* Centra horizontalmente el botón */
+  padding: 20px 20px;
+  background-color: #00000031;
+  color: #37c4ff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+#enlace:hover {
+  color: #ffffff; /* Cambia el color de fondo al pasar el ratón */
+  background-color: #000000;
+
+}
+
+#CentrarBotones {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 5px; /* Ajusta el valor de gap según tu preferencia para reducir el espacio entre botones */
+}
+
+.divgit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*BOTON GITHUB*/
+.buttonGIT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #18171700 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.buttonGIT .textGIT {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.buttonGIT svg path {
+  transition: 400ms;
+}
+
+.buttonGIT:hover {
+  background-color: white;
+}
+
+.buttonGIT:hover .textGIT {
+  color: #000000;
+}
+
+.buttonGIT:hover svg path {
+  fill: #181717;
+}
+
+#ABOUT {
+    text-align: center;  
+}

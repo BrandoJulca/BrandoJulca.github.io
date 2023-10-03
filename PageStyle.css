@@ -1,0 +1,832 @@
+/* EMOJIS
+font-family: 'Jura', sans-serif;
+font-family: 'Noto Color Emoji', sans-serif; 
+//FUENTE OXYGEN
+font-family: 'Oxygen', sans-serif;
+*/
+
+/* ESTILOS GENERALES */
+body {
+  background-color:#ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  position: fixed;
+  top: 0%;
+  left: 0px; /* Ajusta la posición a la izquierda */
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+h3{
+  font-family: 'Jura', sans-serif;
+  color: #37c4ff;
+  text-align: center;
+  font-size: 500%;
+  font-weight: 550;
+}
+
+
+.Puntoxpunto{
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 17px;
+}
+
+h2{
+  font-family: 'Oxygen', sans-serif;
+  color: #000000;
+}
+
+h2 a {
+  margin-bottom: 0%;
+  font-family: 'Ysabeau SC', sans-serif;
+  color: #000000;
+  text-decoration: none;
+}
+
+.FOOT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000da;
+  color: #ffffff;
+  width: 100%;
+  height: 100px; /* Puedes ajustar la altura aquí como desees */
+  font-family: 'Ysabeau SC', sans-serif;
+  font-size: 100%;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.TITTLE{
+text-align: center;
+margin: 0px;
+padding: 0px;
+background: transparent;
+}
+
+header .logo-text {
+  display: inline-block;
+  font-family: 'Tangerine', cursive;
+  line-height: 100%;
+  font-weight: 100;
+  font-size: 400%;
+}
+
+main {
+  padding: 2% 1%;
+}
+
+/* ESTILOS DEL MENU */
+
+nav {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  background-color: #ffffffe3;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 5%;
+  padding-bottom: 2.5%;
+}
+
+
+#menu-btn {
+  position: fixed;
+  z-index: 999;
+  width: 5%;
+  height: 8%;
+  margin-right: 10%;
+  margin-left: -25%;
+  background-image: url("imagen/BRANDO/LOGO_BJ.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; /* Ajusta la imagen dentro del contenedor */
+  transition: transform 0.5s ease;
+  background-color: transparent;
+  border: none;
+  margin-top: -0.4%;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#menu-btn:hover {
+  transition: transform 0.8s ease-out;
+  animation: breathe 1s infinite;
+}
+
+/* ESTILO DE PIE DE PAGINA */
+footer {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0% 0%;
+}
+
+/* ESTILOS DEL MAIN */
+
+.container_MENU {
+  background-image: url("imagen/BRANDO/MADERA.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+  margin: auto;
+  padding: 2%;
+  border-radius: 2%; /* ajusta el valor según la cantidad de curvatura que desees */
+  width: 90%; /* ajusta el valor según la cantidad de reducción que desees */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.item_MENU {
+    margin: 2%;
+    padding: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    max-width: 100%;
+    font-family: 'Caveat Brush', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 180%;
+    background-color: #00000077;
+    padding-top: 1%;
+    border-radius: 5%;
+    font-weight: lighter;
+}
+
+.container {
+  background-image: url("imagen/BRANDO/MADERA.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+  margin: auto;
+  padding: 2%;
+  border-radius: 1%;
+}
+
+.item_PRODUCTO {
+  margin: 2%;
+  padding: 2%;
+  position: relative;
+  max-width: 100%;
+  border-radius: 10%;
+  font-family: 'Caveat Brush', cursive;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ffffff77;
+  padding-bottom: 1%;
+  margin-bottom: 0%;
+  padding-top: 1%;
+  margin-top: 0%;
+}
+
+.item_PRODUCTO h2 {
+  text-align: center;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/*BOTONES*/
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  border: none;
+  background: transparent;
+  color:#fffb00;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+/* ESTILOS DEL MAIN - ESTILOS DEL BOTONES FLOTANTES  */
+.BOT_IMG_MENU {
+  position: relative;
+  flex-wrap: nowrap;
+  width: 350px;
+  max-width: 100%;
+  height: 350px;
+  max-height: 100%;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  transition: transform 0.5s ease-out;
+}
+
+.BOT_IMG_MENU:hover {
+  transition: transform 0.8s ease-out;
+  transform: scale(1.05);
+}
+
+.BOT_IMG_MENU:hover::after {
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  transform-origin: center center;
+  content: attr(data-content);
+  width: 91%;
+  height: 91%;
+  background: rgba(70, 70, 70, 0.4);
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tangerine', cursive;
+  font-size: 400%;
+}
+
+/* //PRODUCTOS// */
+
+.BOT_IMG {
+  position: relative;
+  flex-wrap: nowrap;
+  width: 220px;
+  max-width: 150%;
+  height: 220px;
+  max-height: 150%;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  transition: transform 0.5s ease-out;
+}
+
+.BOT_IMG:hover {
+  transition: transform 0.8s ease-out;
+  transform: scale(1.05);
+}
+
+.BOT_IMG:hover::after {
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  transform-origin: center center;
+  content: attr(data-content);
+  width: 91%;
+  height: 91%;
+  background: rgba(70, 70, 70, 0.4);
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tangerine', cursive;
+  font-size: 400%;
+}
+
+.NAME{
+margin: 2%;
+  text-align: center;
+  font-size: 500%;
+  font-weight: 550;
+  font-style: italic;
+}
+
+
+/* ESTILOS DE LI */
+nav ul {
+  display: inline-block;
+  text-align: center; /* Alinea los elementos li a la derecha */
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 100px; /* Añade un margen izquierdo para separar los elementos */
+  padding-right: 110px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 100%;
+  font-weight:lighter;
+  transition: color 0.3s ease;
+  display: inline-block;
+  transform: scale(1.3); /* Aumenta el tamaño en un 10% */
+  font-family: 'Ysabeau SC', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #00c7f9;
+  font-family: 'Ysabeau SC', sans-serif;
+}
+
+
+
+/* VISOR DE VIDEO PRINCIPAL */
+.contenedor_Espacio {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0%;
+  padding-top: 5%; /* Ajusta el valor para hacer el video más corto */
+  /* Si el video tiene una relación de aspecto diferente, ajusta el valor de padding-top en consecuencia */
+}
+
+
+/* BrandoTexto */
+/* === removing default button style ===*/
+.buttonBrando {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin-top: 3.5%;
+  margin-left: 10%;
+}
+
+/* button styling */
+.buttonBrando {
+  --border-right: 6px;
+  --text-stroke-color:#47bd23b9;
+  --animation-color: #37C4FF;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: 'Ysabeau SC', sans-serif;
+  position: relative;
+  color: #47bd23b9;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-textBrando {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 1.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.buttonBrando:hover .hover-textBrando {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+/* COLUMNA 5 PROYECTOS */
+.COLUMN {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en una nueva línea */
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  align-items: flex-start;
+  padding: 0 auto;
+}
+
+
+/* IMAGEN GRANDE */
+.image-text-container {
+  display: flex;
+  width: 100%;
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.image-container {
+  flex: 0 0 70%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block; /* Asegura que la imagen no tenga espacios adicionales debajo */
+}
+
+.text-container {
+  flex: 0 0 30%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+/* 3 BOTONES CARDS AL LADO DE LA IMAGEN GRANDE */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.cards .red {
+  background-color: #000000;
+}
+
+.cards .blue {
+  background-color: #000000;
+}
+
+.cards .green {
+  background-color: #000000;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+
+/*/autoscroll de imagenes /*/
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.scroll-parent {
+  position: relative;
+  width: 100vw;
+  height: 20rem;
+  padding: 2rem 0;
+  overflow-x: hidden;
+}
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.scroll-element img {
+  width: 15%;
+}
+
+.primary {
+  animation: primary 15s linear infinite;
+}
+
+.secondary {
+  animation: secondary 15s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -164%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 164%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+
+
+/*/ CONTACTO /*/
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.izq {
+  flex: 1;
+  text-align: right; /* Alinear contenido a la derecha */
+  padding: 2%;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+
+.der {
+  flex: 1;
+  padding: 2%;
+  padding-left: 2%;
+  text-align: justify;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.icons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.icon-link {
+  display: inline-block;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px; /* Alinear verticalmente el ícono dentro del botón */
+  border-radius: 50%; /* Para hacer que el botón sea redondeado */
+  background-color: #37c4ff; /* Color de fondo del botón */
+  color: #ffffff; /* Color del ícono */
+  text-align: center;
+  align-items: center;
+}
+
+/* Estilos adicionales para los botones de los íconos */
+.icon-link:hover {
+  background-color: #60c640; /* Cambiar color de fondo al pasar el mouse */
+  color: #ffffff; /* Color del ícono */
+}
+
+
+
+/* //INICIA EL CARRUSEL */
+
+/*EL CARRUSEL COMO TAL*/
+.carousel {
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: auto;
+  margin: auto;
+  background-image: url(imagen/BRANDO/CARRSL_200.png);
+  /*background-image: linear-gradient(to top, #be9b4c, #000000,#be9b4c,#000000 );*/
+  background-position: center center;
+  background-repeat: repeat-y; /* repite el fondo verticalmente */
+  background-size: 100% 200%;
+  height: 400px; /* Ajusta la altura del carrusel según tu preferencia */
+}
+
+.carousel-container {
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+  padding: 2%;
+  margin: auto auto;
+}
+
+/*IMAGEN DENTRO DEL CARRUSEL*/
+.carousel-container img:hover{
+  transition: transform 0.8s ease-out;
+  transform: scale(1.018);
+}
+
+.carousel-container img {
+  margin-right: 3%;
+  max-width: 55%;
+  max-height: 100%;
+  object-fit: cover;
+  margin-top: -35px;
+}
+
+
+/*BOTONES*/
+.prev,
+.next {
+  position: absolute;
+  transform: translateY(-50%);
+  margin-top: 175px;
+  width: 150px;
+  height: 40px;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tangerine', cursive;
+}
+
+.prev {
+  left: 25px;
+  background: #000000a6;
+}
+
+.next {
+  right: 25px;
+  background: #000000a6;
+}
+
+.splide {
+  margin: 0 auto;
+  
+}
+
+.thumbnails {
+  display: flex;
+  margin: 1rem auto 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.thumbnail.is-active {
+  opacity: 1;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.divgit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.buttonGIT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.buttonGIT .textGIT {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.buttonGIT svg path {
+  transition: 400ms;
+}
+
+.buttonGIT:hover {
+  background-color: white;
+}
+
+.buttonGIT:hover .textGIT {
+  color: #000000;
+}
+
+.buttonGIT:hover svg path {
+  fill: #181717;
+}
+
+/* Contenedor de botones de descarga */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  margin-top: 20px; /* Espacio superior entre los botones y el contenido anterior */
+}
+
+/* BOTÓN DESCARGAR */
+.BotonDescargar {
+  background-color: #ffffff;
+  padding: 10px 20px; /* Tamaño fijo del botón (ajusta según sea necesario) */
+  border: 1px solid #007ffe;
+  color: #007ffe;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  margin-right: 20px; /* Espacio derecho para separar los botones */
+}
+
+.BotonDescargar:hover {
+  background-color: #007ffe;
+  color: #fff;
+  transform: scale(1.1); /* Aplica un efecto de escala al botón en hover */
+  border: none;
+}
+
+/* BOTÓN DESCARGAR PREMIUM */
+.BotonDescargarPremium {
+  background-color: #000000;
+  padding: 10px 20px; /* Tamaño fijo del botón (ajusta según sea necesario) */
+  border: 1px solid #000000;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.BotonDescargarPremium:hover {
+  background-color: #fcdd2c;
+  color: #000000;
+  transform: scale(1.1); /* Aplica un efecto de escala al botón en hover */
+  border: none;
+}
