@@ -1,0 +1,294 @@
+/* ESTILOS GENERALES */
+body {
+  background-image: url(imagen/SENSAFRESH/BG_FONDO.jpg);
+  padding: 0 5%; /* Aplica un margen de 5% a la izquierda y a la derecha */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px; /* Ajusta la posición a la izquierda */
+  width: 100%;
+  background-color: #000000;
+  z-index: 999;
+}
+
+h3{
+  font-family: 'Lobster', cursive;
+  color: #ffffff;
+  font-size: 400%;
+}
+
+h2{
+  margin-bottom: 0%;
+}
+
+.TITTLE{
+text-align: center;
+margin: 0px;
+padding: 0px;
+background: transparent;
+}
+
+.FONDO{
+  background-color: transparent;
+}
+
+header .logo-text {
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+  font-size: 400%;
+  line-height: 100%;
+  font-weight: lighter;
+}
+
+main {
+  background-color: transparent;
+  padding: 2% 1%;
+  margin-top: 5%;
+}
+
+/* ESTILOS DEL MENU */
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(to right, #ffffff,#ffffff, #ffffff,#539b00, #fffb00 );
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 10%;
+}
+
+.logo-text{
+  font-weight: bolder;
+  color: transparent;
+  text-align: right;
+  margin-left: 9%;
+  background-image: linear-gradient(to right, #28c202, #fffb00 );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-size: 150%;
+} 
+
+#menu-btn {
+  position: fixed;
+  z-index: 999;
+  width: 7%;
+  height: 10%;
+  margin-right: 0;
+  margin-left: 2%;
+  background-image: url("imagen/SENSAFRESH/SENSATIONFRESH_LOGO.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: contain;
+  background-size: cover;
+  transition: transform 0.5s ease;
+  background-color: transparent;
+  border: none;
+  margin-top: 0%;
+}
+
+#menu-btn:hover {
+  transition: transform 0.8s ease-out;
+  transform: scale(1.3);
+}
+
+/* ESTILO DE PIE DE PAGINA */
+footer {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0% 0%;
+}
+
+/* ESTILOS DEL MAIN */
+
+.container_MENU {
+  background-image: linear-gradient(to right, #28c202b7, #fffb00c2 ,#1c8a00);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+  margin: auto;
+  padding: 2%;
+  border-radius: 2%; /* ajusta el valor según la cantidad de curvatura que desees */
+  width: 90%; /* ajusta el valor según la cantidad de reducción que desees */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.item_MENU {
+    margin: 0%;
+    padding: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    max-width: 100%;
+    font-family: 'Caveat Brush', cursive;
+    text-align: center;
+    color: #000000;
+    font-size: 180%;
+    background-color: #ffffff;
+    padding-top: 1%;
+    border-radius: 5%;
+    font-weight: lighter;
+}
+
+.container {
+  background-image: linear-gradient(to right, #28c202b7, #fffb00c2 ,#1c8a00);
+  background-size: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+  margin: auto;
+  padding: 2%;
+  border-radius: 10%; /* ajusta el valor según la cantidad de curvatura que desees */
+}
+
+.item_PRODUCTO {
+  margin: 2%;
+  padding: 2%;
+  position: relative;
+  max-width: 100%;
+  border-radius: 10%;
+  font-family: 'Caveat Brush', cursive;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00000077;
+}
+
+/*BOTONES*/
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  border: none;
+  background: transparent;
+  color:#fffb00;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+/* ESTILOS DEL MAIN - ESTILOS DEL BOTONES FLOTANTES  */
+.BOT_IMG_MENU {
+  position: relative;
+  flex-wrap: nowrap;
+  width: 350px;
+  max-width: 100%;
+  height: 350px;
+  max-height: 100%;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  border: none;
+  transition: transform 0.5s ease-out;
+}
+
+.BOT_IMG_MENU:hover {
+  transition: transform 0.8s ease-out;
+  transform: scale(1.05);
+}
+
+.BOT_IMG_MENU:hover::after {
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  transform-origin: center center;
+  content: attr(data-content);
+  width: 91%;
+  height: 91%;
+  background: rgba(70, 70, 70, 0.4);
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Righteous', cursive;
+  font-size: 170%;
+}
+
+/* //PRODUCTOS// */
+
+.BOT_IMG {
+  position: relative;
+  flex-wrap: nowrap;
+  width: 220px;
+  max-width: 150%;
+  height: 220px;
+  max-height: 150%;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  transition: transform 0.5s ease-out;
+}
+
+.BOT_IMG:hover {
+  transition: transform 0.8s ease-out;
+  transform: scale(1.05);
+}
+
+.BOT_IMG:hover::after {
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  transform-origin: center center;
+  content: attr(data-content);
+  width: 91%;
+  height: 91%;
+  background: rgba(70, 70, 70, 0.4);
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Righteous', cursive;
+  font-size: 170%;
+}
+
+.NAME{
+margin: 0.5%;
+  text-align: center;
+  font-size: 450%;
+}
+
+
+
+
+  
+  

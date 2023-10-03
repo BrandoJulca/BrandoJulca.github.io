@@ -1,0 +1,243 @@
+/* ESTILOS GENERALES */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  margin: 0;
+
+}
+
+h3{
+  font-family: 'Lobster', cursive;
+  color: #ffffff;
+  font-size: 80px;
+}
+
+.TITTLE{
+text-align: center;
+margin: 0px;
+padding: 0px;
+background: transparent;
+}
+
+.FONDO{
+  background-image: url(imagen/SENSAFRESH/BG_FONDO.jpg);
+}
+
+/* ESTILOS DE CABECERA */
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #000000;
+  z-index: 999; /* para asegurarnos de que el menú siempre esté en primer lugar */
+}
+
+header .logo-text {
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+  font-size: 65px;
+  line-height: 50px;
+  font-weight: lighter;
+}
+
+main{
+  background-color: transparent;
+}
+
+/* ESTILOS DEL MENU */
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(to right, #ffffff,#ffffff, #ffffff,#539b00, #fffb00 );
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 100px;
+}
+
+.logo-text{
+  font-weight: bolder;
+  color: transparent;
+  text-align: right;
+  margin-left: 150px;
+  background-image: linear-gradient(to right, #28c202, #fffb00 );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-size: 150%;
+} 
+
+#menu-btn {
+  position: fixed;
+  z-index: 999;
+  width: 100px;
+  height: 100px;
+  margin-right: 0;
+  margin-left: 25px;
+  background-image: url("imagen/SENSAFRESH/SENSATIONFRESH_LOGO.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: contain;
+  background-size: cover;
+  transition: transform 0.5s ease;
+  background-color: transparent;
+  border: none;
+  margin-top: 8px;
+}
+
+#menu-btn:hover {
+  transition: transform 0.8s ease-out;
+  transform: scale(1.3);
+}
+
+/* ESTILO DE PIE DE PAGINA */
+footer {
+  background-color: black;
+  color: rgb(112, 112, 112);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ESTILOS DEL MAIN */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-position: center center;
+    background-repeat: repeat-y; /* repite el fondo verticalmente */
+    background-size: 100% auto;
+    opacity: 1;
+    margin: auto;
+    padding: auto;
+  }
+
+.item {
+    margin: 13px;
+    padding: 13px;
+    position: relative;
+    max-width: 100%;
+}
+
+/*EL CARRUSEL COMO TAL*/
+.carousel {
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: auto;
+  margin: auto;
+  margin-top: 100px;
+  background-image: url(imagen/SENSAFRESH/MADERA_BG.jpg);
+  /*background-image: linear-gradient(to top, #be9b4c, #000000,#be9b4c,#000000 );*/
+  background-position: center center;
+  background-repeat: repeat-y; /* repite el fondo verticalmente */
+  background-size: 120% auto;
+}
+
+
+.carousel-container {
+  width: 90%;
+  display: flex;
+  transition: transform 0.5s ease;
+  padding: 20px;
+  margin: auto;
+}
+
+/*IMAGEN DENTRO DEL CARRUSEL*/
+.carousel-container img:hover{
+  transition: transform 0.8s ease-out;
+  transform: scale(1.018);
+}
+
+.carousel-container img {
+  margin-right: 30px;
+  max-width: 25%;
+  max-height: 25%;
+  object-fit: cover;
+}
+
+
+/*BOTONES*/
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  border: none;
+  background: transparent;
+  color:#fffb00;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+/* ESTILOS DEL MAIN - ESTILOS DEL BOTONES FLOTANTES  */
+.BOT_IMG {
+  position: relative;
+  flex-wrap: nowrap;
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  transition: transform 0.5s ease-out;
+}
+
+.BOT_IMG:hover {
+  transition: transform 0.8s ease-out;
+  transform: scale(1.01);
+}
+
+.BOT_IMG:hover::after {
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  transform-origin: center center;
+  content: attr(data-content);
+  width: 91%;
+  height: 91%;
+  background: rgba(70, 70, 70, 0.4);
+  border-radius: 500px;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Righteous', cursive;
+  font-size: 50px;
+}
+
+
+
+
+
+
+
+  
+  
