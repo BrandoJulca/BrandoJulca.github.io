@@ -68,14 +68,12 @@ h2{
 h2 a {
   margin-bottom: 0%;
   font-family: 'Ysabeau SC', sans-serif;
-  color: #12FFFF;
   text-decoration: none;
 }
 
 h2 a:hover {
   margin-bottom: 0%;
   font-family: 'Ysabeau SC', sans-serif;
-  color: #ffffff;
   text-decoration: none;
 }
 
@@ -193,25 +191,11 @@ footer {
     max-width: 100%;
     font-family: 'Caveat Brush', cursive;
     text-align: center;
-    color: #ffffff;
     font-size: 180%;
     background-color: #00000077;
     padding-top: 1%;
     border-radius: 5%;
     font-weight: lighter;
-}
-
-.container {
-  background-image: url("imagen/BRANDO/MADERA.png");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  opacity: 1;
-  margin: auto;
-  padding: 2%;
-  border-radius: 1%;
 }
 
 .item_PRODUCTO {
@@ -220,9 +204,7 @@ footer {
   position: relative;
   max-width: 100%;
   border-radius: 10%;
-  font-family: 'Caveat Brush', cursive;
   text-align: center;
-  color: #ffffff;
   background-color: #1816168c;
   padding-bottom: 1%;
   margin-bottom: 0%;
@@ -230,10 +212,30 @@ footer {
   margin-top: 3%;
 }
 
-.item_PRODUCTO h2 {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+.item_PRODUCTO .BOT_IMG,
+.item_PRODUCTO:hover .BOT_IMG {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
+
+.item_PRODUCTO:hover .BOT_IMG {
+  filter: grayscale(0%);
+  color: #12FFFF; /* Cambia el color del texto al pasar el mouse por encima del botón */
+}
+
+.item_PRODUCTO h2 a,
+.item_PRODUCTO:hover h2 a {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  color: white; /* Color del texto predeterminado */
+}
+
+.item_PRODUCTO:hover h2 a {
+  filter: grayscale(0%);
+  color: #12FFFF; /* Cambia el color del texto al pasar el mouse por encima del botón */
+}
+
+
 
 /*BOTONES*/
 .prev,
@@ -275,10 +277,7 @@ footer {
   transition: transform 0.5s ease-out;
 }
 
-.BOT_IMG_MENU:hover {
-  transition: transform 0.8s ease-out;
-  transform: scale(1.05);
-}
+
 
 .BOT_IMG_MENU:hover::after {
   transition: 0.5s;
@@ -290,14 +289,13 @@ footer {
   content: attr(data-content);
   width: 91%;
   height: 91%;
-  background: rgba(70, 70, 70, 0.4);
+  background: #00000000;
   border-radius: 50%;
   text-align: center;
-  color: #ffffff;
+  color: #ffffff00;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Tangerine', cursive;
   font-size: 400%;
 }
 
@@ -339,11 +337,6 @@ footer {
   opacity: 0; /* Inicialmente, oculta el contenido */
   transition: opacity 0.3s ease-out;
 }
-
-.BOT_IMG:hover::after {
-  opacity: 1; /* Muestra el contenido en hover */
-}
-
 
 .NAME{
   text-align: center;
@@ -618,46 +611,64 @@ iframe {
   border-radius: 20px;
 }
 
-.Btn::before {
-  transition-duration: 1s;
+.MenuPremium a {
+  color: #12ffff; /* Color inicial del texto del enlace */
+  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
 }
 
 .MenuPremium:hover {
-  background: linear-gradient(to right,#01265a,#12ffff,#01001d,#021f4b,#12ffff,#01001d);
+  background: linear-gradient(to right, #01265a, #12ffff, #01001d, #021f4b, #12ffff, #01001d);
   background-size: 250%;
-  color: #000000;
   transform: scale(1.1); /* Aplica un efecto de escala al botón en hover */
   border: none;
   background-position: right;
+  transition-duration: 1s;
+}
+
+.MenuPremium:hover a {
+  color: #ffffff; /* Cambia el color del texto del enlace al pasar el mouse */
+}
+
+
+
+.Btn::before {
   transition-duration: 1s;
 }
 
 
 /* BOTÓN DESCARGAR PREMIUM 2 */
 .MenuPremium2 {
-  color: #12ffff;
-  background: #0000007c;
+  background: #00000000;
   background-position: left;
   transition-duration: 1s;
   padding: 11px 50px; /* Tamaño fijo del botón (ajusta según sea necesario) */
-  border: none;
+  border: solid #12ffff;
   font-weight: 800;
   border-radius: 20px;
+}
+
+.MenuPremium2 a {
+  color: #12ffff; /* Color inicial del texto del enlace */
+  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+.MenuPremium2:hover {
+  background: linear-gradient(to right, #01265a, #12ffff, #01001d, #021f4b, #12ffff, #01001d);
+  background-size: 250%;
+  transform: scale(1.1); /* Aplica un efecto de escala al botón en hover */
+  border: none;
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.MenuPremium2:hover a {
+  color: #ffffff; /* Cambia el color del texto del enlace al pasar el mouse */
 }
 
 .Btn::before {
   transition-duration: 1s;
 }
 
-.MenuPremium2:hover {
-  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
-  background-size: 250%;
-  color: #ffffff;
-  transform: scale(1.1); /* Aplica un efecto de escala al botón en hover */
-  border: none;
-  background-position: right;
-  transition-duration: 1s;
-}
 
 /* TEXT_LOGO_BRANDEV */
 
