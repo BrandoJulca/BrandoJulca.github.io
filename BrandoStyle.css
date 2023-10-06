@@ -456,7 +456,7 @@ nav ul li a:hover {
   flex-wrap: wrap; /* Permitir que los elementos se envuelvan en una nueva línea */
   justify-content: space-between;
   overflow: hidden;
-  width: 100%;
+  width: 85%;
   margin: 0 auto;
   align-items: flex-start;
   padding: 0 auto;
