@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="MyList.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+<html>
+
+<head>
+    <title>My List</title>
+</head>
+
+<body>
+    <div class="content">
+        <img class="superpuesta" src="cuaderno.png" alt="Imagen Superpuesta">
+        <div id="center-container">
+            <div id="name">
+                <h1>MY LIST</h1>
+            </div>
+            <div id="input">
+                <input type="text" id="nuevaTarea" placeholder="What thing remains to be done?">
+                <button onclick="agregarTarea()">Add</button>
+                <button id="imprimirPagina">Print</button>
+            </div>
+        </div>
+        <div class="tabla-container">
+            <table id="tablaDatos">
+                <thead>
+                    <tr>
+                        <th>Things to do</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se insertarán las tareas -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="MyListJS.js"></script>
+</html>
