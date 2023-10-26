@@ -860,6 +860,7 @@ iframe {
 
 .CENTRADO {
   text-align: center; /* Centra el texto dentro del contenedor */
+  align-items: center;
 }
 
 .CENTRADO > * {
