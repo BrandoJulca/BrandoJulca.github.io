@@ -857,3 +857,21 @@ iframe {
 #ABOUT {
     text-align: center;  
 }
+
+.CENTRADO {
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.CENTRADO > * {
+  margin: 0 auto; /* Centra elementos con un ancho fijo */
+  display: block; /* Hace que los elementos ocupen todo el ancho disponible */
+  text-align: center; /* Centra el contenido dentro de los elementos */
+}
+
+.CENTRADO img {
+  width: 50%; /* Establece el ancho al 100% del contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  max-width: none; /* Permite que la imagen se expanda más allá de su tamaño original */
+  display: block; /* Asegura que la imagen ocupe todo el ancho disponible */
+  margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+}

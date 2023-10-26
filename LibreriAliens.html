@@ -3,6 +3,12 @@
 <head>
 <!-- INICIA LA PAG WEB LINKEANDO A CSS -->
 <link rel="stylesheet" href="BrandoStyle.css">
+<!-- ESTILO SPLIDEJS -->
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+<!-- FIN SPLIDE -->
+<!-- JS DE SPLICE -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<!-- FIN SPLICE -->
 <!-- REPOSITORIO DE ICONOS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,9 +106,50 @@
 
 <!-- INICIA FILA -->
 <h3 class="NAME"><br>How's the website?</h3> 
-<div class="iframe-container" style="text-align: center; padding: 10px; padding-left: 0%; padding-right: 0%;">
-  <iframe src="https://www.youtube.com/embed/HsFMcJ3-5IE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 80%; height: 600px;"></iframe>
+<!-- //INICIA EL CARRUSEL// -->
+<!-- Style the bar as you like -->
+<style>
+  .my-slider-progress {
+    background: #ccc;
+  }
+  
+  .my-slider-progress-bar {
+    background: greenyellow;
+    height: 2px;
+    transition: width 400ms ease;
+    width: 0;
+  }
+</style>
+<div class="CENTRADO">
+<div class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide"><img src="imagen/BRANDO/SCRNSHOT_LIBRERI_1.png"></li>
+      <li class="splide__slide"><img src="imagen/BRANDO/SCRNSHOT_LIBRERI_2.png"></li>
+      <li class="splide__slide"><img src="imagen/BRANDO/SCRNSHOT_LIBRERI_3.png"></li>
+      <li class="splide__slide"><img src="imagen/BRANDO/SCRNSHOT_LIBRERI_4.png"></li>
+      <li class="splide__slide"><img src="imagen/BRANDO/SCRNSHOT_LIBRERI_5.png"></li>
+      <li class="splide__slide"><img src="imagen/BRANDO/SCRNSHOT_LIBRERI_6.png"></li>
+    </ul>
+  </div>
+  
+  <!-- Add the progress bar element -->
 </div>
+</div>
+
+<script>
+  var splide = new Splide( '.splide' );
+  var bar    = splide.root.querySelector( '.my-carousel-progress-bar' );
+  
+  // Updates the bar width whenever the carousel moves:
+  splide.on( 'mounted move', function () {
+    var end  = splide.Components.Controller.getEnd() + 1;
+    var rate = Math.min( ( splide.index + 1 ) / end, 1 );
+    bar.style.width = String( 100 * rate ) + '%';
+  } );
+  splide.mount();
+</script>
+<!-- TERMINA CARRUSEL -->
 <!-- FIN FILA -->
 
 <h3 class="NAME"><br>Unlock the backstage code</h3> 
