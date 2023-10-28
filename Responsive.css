@@ -1,0 +1,64 @@
+/**Movil**/
+@media (max-width: 767px) {
+
+    .image {
+    max-width: 90%;
+}
+
+.icons {
+    margin-top: 10px;
+    text-align: center;
+    padding-right: auto;
+}
+
+.izq {
+    flex: 1;
+    text-align: center;
+    padding: 2%;
+    padding-right: 0%;
+    margin-right: 0%;
+}
+
+/* Oculta la lista de enlaces inicialmente */
+.menu-list {
+    display: none;
+  }
+  
+  /* Estiliza el botón de hamburguesa */
+  .menu-icon {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Cuando se hace clic en el botón de hamburguesa, muestra la lista de enlaces */
+  .menu-icon.clicked + .menu-list {
+    display: block;
+  }
+  
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}

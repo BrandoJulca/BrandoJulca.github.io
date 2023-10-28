@@ -1,3 +1,59 @@
+/**Movil**/
+@media (max-width: 767px) {
+  img.image {
+    max-width: 90%;
+}  
+  div.icons {
+display: none;
+  }
+  
+  .izq {
+    flex: 1;
+    text-align: center;
+    padding: 2%;
+    padding-right: 0%;
+    margin-right: 0%;
+  }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+  img.image {
+    max-width: 90%;
+}  
+  div.icons {
+display: none;
+  }
+  div#SobreMi.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  div.izq {
+    flex: 1;
+    text-align: center;
+    padding: 2%;
+    padding-right: 0%;
+    margin-right: 0%;
+  }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+  .tablet {
+      display: none;
+  }
+  .movil {
+      display: none;
+  }
+}
+
+
 /* ESTILOS GENERALES */
 body {
   margin: 0;
@@ -454,12 +510,12 @@ nav ul li a:hover {
 .COLUMN {
   display: flex;
   flex-wrap: wrap; /* Permitir que los elementos se envuelvan en una nueva línea */
-  justify-content: space-between;
   overflow: hidden;
   width: 85%;
   margin: 0 auto;
   align-items: flex-start;
   padding: 0 auto;
+  justify-content: space-around;
 }
 
 
@@ -875,4 +931,18 @@ iframe {
   max-width: none; /* Permite que la imagen se expanda más allá de su tamaño original */
   display: block; /* Asegura que la imagen ocupe todo el ancho disponible */
   margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+}
+
+/* ESTILO FOTOS*/
+.FOTOS {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan a la siguiente línea si no hay suficiente espacio horizontal */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: flex-start; /* Alinea las imágenes en la parte superior del contenedor */
+}
+
+.FOTOS img {
+  max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
+  height: auto; /* Mantiene la proporción original de las imágenes */
+  margin: 5px; /* Agrega un espacio entre las imágenes */
 }
