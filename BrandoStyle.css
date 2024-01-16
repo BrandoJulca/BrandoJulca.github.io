@@ -121,6 +121,19 @@ h2{
   color: #ffffff;
 }
 
+#centerH2{
+  text-align: center;
+  margin: 0%;
+}
+
+h5{
+  margin: 0%;
+  font-family: 'Ysabeau SC', sans-serif;
+  color: rgb(34, 233, 25);
+  font-size: 150%;
+  text-align: center;
+}
+
 h2 a {
   margin-bottom: 0%;
   font-family: 'Ysabeau SC', sans-serif;
